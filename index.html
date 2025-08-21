@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class='no-brightness-selection'>
     <head>
         <meta charset='utf-8'/>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -8,16 +8,201 @@
         <title>EduLinq</title>
 
         <link rel='icon' href='images/favicon.png'>
+
+        <link rel='stylesheet' href='css/vendor/normalize.css'>
+        <link rel='stylesheet' href='css/style.css'>
+
+        <script type='module' src='js/main.js'></script>
     </head>
     <body>
-        <h2>EduLinq</h2>
-        <p>
-            Our mission is to create free and open source software in the educational domain.
-            We promote policies, habits, and procedures for creating teaching materials using free and open source software.
-        </p>
-        <p>
-            <a href='https://github.com/edulinq'>github.com/edulinq</a>
-        </p>
+        <div class='page primary-color'>
+            <div class='header accent-color'>
+                <div class='nav'>
+                    <div class='nav-item'>
+                        <a href='#mission'>Mission</a>
+                    </div>
+                    <div class='nav-item'>
+                        <a href='#projects'>Projects</a>
+                    </div>
+                    <div class='nav-item'>
+                        <a href='#about-us'>Story</a>
+                    </div>
+                    <div class='nav-item'>
+                        <a href='#get-involved'>Get Involved</a>
+                    </div>
+                    <div class='nav-item'>
+                        <a href='#contact-us'>Contact Us</a>
+                    </div>
+                </div>
+                <div class='bright-mode-toggle'>
+                    <span class='selector light'>☀</span>
+                    <span>/</span>
+                    <span class='selector dark'>☾</span>
+                </div>
+            </div>
+
+            <div class='content'>
+                <div class='section mission'>
+                    <h2 id='mission'>Our Mission</h2>
+
+                    In short, our mission is to make educational tools for everyone.
+
+                    EduLinq is a 501(c)(3) nonprofit dedicated to creating free and open source software for education.
+                    We believe that everyone deserves a good eduation regardless of wealth or status,
+                    and we want to help make that possible.
+                    We believe that educational software should be:
+                    1) free
+                    2) open source
+                    3) high quality
+
+                    Free means that software is available to anyone who can download it.
+                    (Access to computers and open internet is a concern that needs to be addressed, but outside the scope of our mission.)
+
+                    Open source software means that we are dedicated to transparency and always improving.
+                    Anyone can see what our tools are doing, no tricks or "gotchas".
+                    Open source allows our software to always be imrpoving and evolving.
+                    It's impossible to forsee all the needs of people ay one time,
+                    but because our software is availble for all to improve, we can tackle changes as they come.
+
+                    High quality software means we build our software robustly and with intention.
+                    We take care to always follow strong software engineering practices,
+                    the <a href='https://www.acm.org/code-of-ethics'>ACM Code of Ethics</a>,
+                    and our own moral compass.
+                    We strive build software that is secure, private, maintainable, and robust.
+
+
+                </div>
+                <div class='section projects'>
+                    <h2 id='projects'>Our Projects</h2>
+
+                    <div class='cards-area'>
+                        <div class='card card-project secondary-color drop-shadow'>
+                            <h3 id='projetcs-autograder'>Lynx Autograder</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+
+                        <div class='card card-project secondary-color drop-shadow'>
+                            <h3 id='projects-quiz-composer'>Quiz Composer</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+
+                        <div class='card card-project secondary-color drop-shadow'>
+                            <h3 id='projetcs-lms'>LMS Toolkit</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+
+                        <div class='card card-project secondary-color drop-shadow'>
+                            <h3 id='projects-pacai'>Pacai</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class='section about-us'>
+                    <h2 id='about-us'>Our Story</h2>
+
+                    <div class='cards-area officers'>
+                        <div class='card card-bio secondary-color drop-shadow'>
+                            <h3 id='eriq'>Eriq Augustine</h3>
+                            <img src='images/augustine.png' />
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                        <div class='card card-bio secondary-color drop-shadow'>
+                            <h3 id='lise'>Lise Getoor</h3>
+                            <img src='images/getoor.png' />
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class='cards-area board'>
+                        <div class='card card-bio secondary-color drop-shadow'>
+                            <h3 id='peter'>Peter Alvaro</h3>
+                            <img src='images/augustine.png' />
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                        <div class='card card-bio secondary-color drop-shadow'>
+                            <h3 id='alex'>Alexander Dekhtyar</h3>
+                            <img src='images/augustine.png' />
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                        <div class='card card-bio secondary-color drop-shadow'>
+                            <h3 id='leilani'>Leilani Gilpin</h3>
+                            <img src='images/augustine.png' />
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class='section get-involved'>
+                    <h2 id='get-involved'>Get Involved</h2>
+
+                    <div class='participation'>
+                        Coders
+                    </div>
+
+                    <div class='participation'>
+                        Designer
+                    </div>
+
+                    <div class='participation'>
+                        Tech Writers
+                    </div>
+
+                    <div class='participation'>
+                        Teachers and Teaching Assistants
+                    </div>
+
+                    <div class='participation'>
+                        Anyone Who Belives in Us
+
+                        <a href='https://github.com/sponsors/edulinq'>GitHub Sponsor</a>
+
+                        <a href='https://www.paypal.com/donate?hosted_button_id=4D5VY26TH4YJE'>PayPal Donation</a>
+                    </div>
+                </div>
+                <div class='section contact-us'>
+                    <h2 id='contact-us'>Where to Find Us</h2>
+
+                        <a href='https://github.com/edulinq'>github.com/edulinq</a>
+
+
+                        <a href='https://discord.gg/fhX2Ts5bGk'>Discord Invite</a>
+
+                        <a href='https://discord.com/channels/1382117605367742585/1382117605367742588'>Discord Server</a>
+                </div>
+            </div>
+            </div>
+
+            <div class='footer accent-color'>
+                <div class='left'>
+                    <span>©2025 EduLinq</span>
+                </div>
+                <div class='middle'>
+                </div>
+                <div class='right'>
+                    <a href='https://github.com/edulinq'>
+                        <img class='light-only' src='images/vendor/github-mark.png' />
+                        <img class='dark-only' src='images/vendor/github-mark-white.png' />
+                    </a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
 
