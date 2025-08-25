@@ -546,7 +546,6 @@ fieldset {
 
     border-radius: var(--curve-radius-large);
     font-size: var(--font-size-larger);
-    text-align: center;
 
     outline: 5px solid var(--color-bg-accent-primary);
     outline-offset: -3px;
@@ -557,9 +556,10 @@ fieldset {
 .card h3 {
     margin-bottom: 0.5em;
     word-break: keep-all;
+    text-align: center;
 }
 
-.card p {
+.card {
     font-size: var(--font-size-normal);
 }
 
@@ -575,6 +575,10 @@ fieldset {
 
 .cards-area-get-involved .card p {
     flex-grow: 1;
+}
+
+.cards-area-projects .card {
+    min-width: 15em;
 }
 
 .logos-area {
