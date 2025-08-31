@@ -43,6 +43,7 @@
     --curve-radius-small: 10px;
     --curve-radius-large: 20px;
 
+    --font-size-huge: 3.00rem;
     --font-size-larger: 1.25rem;
     --font-size-large: 1.15rem;
     --font-size-normal: 1.00rem;
@@ -428,7 +429,7 @@ fieldset {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -444,7 +445,7 @@ fieldset {
 .header .nav {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 1.5em;
     word-break: keep-all;
@@ -490,6 +491,7 @@ fieldset {
 
 .footer div.right {
     justify-content: flex-end;
+    gap: 1em;
 }
 
 .footer img {
@@ -510,15 +512,29 @@ fieldset {
     flex-grow: 1000;
 }
 
-.section h2 {
-    margin-bottom: 1em;
-    text-align: center;
-}
-
 .section {
     flex-grow: 1000;
     padding: 1.0em;
     border-radius: var(--curve-radius-large);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.0em;
+}
+
+.section .section-header {
+    width: 50%;
+    background-color: var(--color-bg-accent-primary);
+    padding: 1.5em;
+    border-radius: var(--curve-radius-large);
+}
+
+.section .section-header h2 {
+    font-size: var(--font-size-huge);
+    margin: 0;
+    text-align: center;
 }
 
 .card-section {
