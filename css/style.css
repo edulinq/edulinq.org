@@ -810,6 +810,14 @@ svg {
     padding: 1em;
 }
 
+.card-area-officers .card-bio {
+    min-width: 20em;
+}
+
+.card-area-board .card-bio {
+    min-width: 15em;
+}
+
 .card h3 {
     margin-bottom: 0.5em;
     word-break: keep-all;
@@ -820,6 +828,14 @@ svg {
     transform: translateY(-3px);
     transition: all 0.3s ease;
     background: var(--color-bg-accent-gradient);
+}
+
+.card-bio h3 {
+    margin: 0;
+}
+
+.card-bio h4 {
+    margin-bottom: 0.5em;
 }
 
 .card-bio img {
