@@ -58,9 +58,9 @@
     --curve-radius-small: 8px;
     --curve-radius-large: 16px;
 
-    --icon-size-large: 48px;
-    --icon-size-normal: 36px;
-    --icon-size-small: 24px;
+    --icon-size-large: 8em;
+    --icon-size-normal: 4em;
+    --icon-size-small: 1.5em;
 
     --font-size-huge: 2.00rem;
     --font-size-larger: 1.40rem;
@@ -514,6 +514,7 @@ a.logo {
 .page ul,
 .page ol {
     margin-left: 2em;
+    margin-bottom: 1em;
 }
 
 fieldset {
@@ -555,18 +556,13 @@ fieldset {
 }
 
 svg {
-    height: var(--icon-size-small);
-    width: var(--icon-size-small);
+    height: var(--icon-size-normal);
+    width: var(--icon-size-normal);
 }
 
 .page-body .icon {
     padding: 1.0em;
     border-radius: var(--curve-radius-large);
-}
-.page-body svg {
-    flex-shrink: 1;
-    height: var(--icon-size-large);
-    width: var(--icon-size-large);
 }
 
 @keyframes rotation {
@@ -628,6 +624,11 @@ svg {
     padding-bottom: 0em;
 }
 
+.header .nav svg {
+    height: var(--icon-size-small);
+    width: var(--icon-size-small);
+}
+
 .header .nav-highlight {
     border-bottom: solid var(--color-bg-accent-tertiary);
 }
@@ -685,8 +686,9 @@ svg {
     justify-content: flex-end;
 }
 
-.footer img {
-    height: 1.5em;
+.footer svg {
+    height: var(--icon-size-small);
+    width: var(--icon-size-small);
 }
 
 .page-body {
@@ -863,7 +865,9 @@ svg {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
+
+    flex-grow: 1;
+    align-items: flex-end;
 }
 
 .card .logo {
@@ -873,7 +877,8 @@ svg {
     align-items: center;
 }
 
+.card .logo svg,
 .card .logo img {
-    max-width: 4em;
-    max-height: 4em;
+    max-height: var(--icon-size-normal);
+    max-width: var(--icon-size-normal);
 }
