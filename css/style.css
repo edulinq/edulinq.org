@@ -707,7 +707,8 @@ svg {
 
 .content {
     flex-grow: 1000;
-    padding: 1.0em;
+    align-self: center;
+    max-width: 80vw;
     border-radius: var(--curve-radius-large);
 }
 
@@ -722,21 +723,23 @@ svg {
 
 .section {
     flex-grow: 1000;
-    padding: 1.0em;
     border-radius: var(--curve-radius-large);
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3.0em;
+    gap: 1.0em;
 }
 
 .section .section-header {
-    width: 50%;
+    width: 110%;
     background-color: var(--color-bg-accent-primary);
     padding: 1.5em;
     border-radius: var(--curve-radius-large);
+
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .section .section-header h2 {
@@ -745,17 +748,12 @@ svg {
     text-align: center;
 }
 
-.section .section-text {
-    padding: 1.0em;
-    margin: min(18px, 1vw);
-    border-radius: var(--curve-radius-large);
-    width: 45%;
+.section .section-brief {
+    width: 105%;
     text-align: center;
     font-size: var(--font-size-normal);
-}
-
-.section.mission {
-    gap: 0.5em;
+    border-bottom: 2px var(--color-bg-accent-primary-low) solid;
+    padding-bottom: 1em;
 }
 
 .card-sections {
@@ -787,7 +785,7 @@ svg {
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: flex-start;
-    gap: 2em;
+    gap: 1em;
     align-items: stretch;
 }
 
