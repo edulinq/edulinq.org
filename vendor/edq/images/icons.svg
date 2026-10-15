@@ -1,5 +1,5 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-    <!-- For cross browser support, this style needs to be here and in site/css/edulinq-icon-sheet.css -->
+    <!-- For cross browser support, this style needs to be here and in src/css/icons.css -->
     <style>
         symbol.icon .fill-bg-grey {
             fill: #231f20;

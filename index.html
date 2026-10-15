@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class='no-brightness-selection'>
+<html class='no-brightness-selection' lang='en-US'>
     <head>
         <meta charset='utf-8'/>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -8,17 +8,17 @@
         <title>EduLinq</title>
 
         <link rel='icon' href='images/favicon.png'>
+        <link rel='icon-sheet' href='vendor/edq/images/icons.svg'>
 
-        <link rel='stylesheet' href='css/vendor/normalize.css'>
+        <link rel='stylesheet' href='vendor/edq/css/edq.css'>
         <link rel='stylesheet' href='css/style.css'>
-        <link rel='stylesheet' href='css/edulinq-icon-sheet.css'>
 
         <script type='module' src='js/main.js'></script>
     </head>
     <body>
         <div class='page primary-color'>
             <div class='header secondary-color'>
-                <div class='nav'>
+                <div class='site-nav'>
                     <div class='nav-item'>
                         <a href='#mission'>
                             <div class='nav-link'>
@@ -54,441 +54,447 @@
                             </div>
                         </a>
                     </div>
-                    <div class='bright-mode-toggle'>
+                </div>
+                <div class='site-branding'>
+                    <h1>EduLinq</h1>
+                </div>
+                <div class='site-context'>
+                    <div class='brightmode-toggle'>
                         <div>
-                            <svg class='selector light light-only icon' role='img' aria-labelledby='moon-label'>
-                                <title id='moon-label'>Toggle light mode</title>
-                                <use href="images/edulinq-icon-sheet.svg#icon-moon-light"></use>
+                            <svg class='lightmode selector lightmode-only icon' role='img' aria-labelledby='brightmode-toggle-moon-label'>
+                                <title id='brightmode-toggle-moon-label'>Toggle Light Mode</title>
+                                <use href="vendor/edq/images/icons.svg#icon-moon-light"></use>
                             </svg>
-                            <svg class='selector dark dark-only icon' role='img' aria-labelledby='sun-label'>
-                                <title id='sun-label'>Toggle dark mode</title>
-                                <use href="images/edulinq-icon-sheet.svg#icon-sun-dark"></use>
+                            <svg class='darkmode selector darkmode-only icon' role='img' aria-labelledby='brightmode-toggle-sun-label'>
+                                <title id='brightmode-toggle-sun-label'>Toggle Dark Mode</title>
+                                <use href="vendor/edq/images/icons.svg#icon-sun-dark"></use>
                             </svg>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class='content'>
-                <div class='section mission'>
-                    <div class='section-header'>
-                        <h2 id='mission'>Our Mission</h2>
-                    </div>
+            <div class='body'>
+                <div class='page-content primary-color'>
+                    <div class='section mission'>
+                        <h2 class='bar primary-accent-color' id='mission'>Our Mission</h2>
 
-                    <div class='section-brief'>
-                        <p class='no-bottom'>
-                            In short, our mission is to make educational tools for everyone.
-                        </p>
+                        <div class='section-brief'>
+                            <p class='no-bottom'>
+                                Our mission is to make educational tools for everyone.
+                            </p>
 
-                        <p class='no-bottom'>
-                            EduLinq is a 501(c)(3) nonprofit dedicated to creating free and open source software for education.
-                        </p>
-                        <p class='no-bottom'>
-                            We believe that everyone deserves a good education regardless of wealth or status,
-                            and we want to help make that possible.
-                            We believe that educational software should be:
-                        </p>
-                    </div>
-
-                    <div class='cards-area cards-area-beliefs'>
-                        <div class='card card secondary-color drop-shadow'>
-                            <h3 id='belief-free'>Free</h3>
-                            <p>
-                                Free software is available without charge to anyone that can download it.
-                                There should be no barriers on education, and wealth is perhaps the greatest barrier there is.
-                                Whether that barrier comes in the form of money, time, or privilege.
-                                As a software developer,
-                                we don't have the power to address all the issues that come with wealth inequality,
-                                but at least we can make our software free.
+                            <p class='no-bottom'>
+                                EduLinq is a 501(c)(3) nonprofit dedicated to creating free and open source software for education.
+                            </p>
+                            <p class='no-bottom'>
+                                We believe that everyone deserves a good education regardless of wealth or status,
+                                and we want to help make that possible.
+                                We believe that educational software should be:
                             </p>
                         </div>
-                        <div class='card card secondary-color drop-shadow'>
-                            <h3 id='belief-open-source'>Open Source</h3>
-                            <p>
-                                Open source software has code that is always available to view and modify,
-                                anyone can see how the software works and improve upon it.
-                                Our dedication to open source software is that same as
-                                our dedication to transparency and always improving.
-                                It's impossible to foresee all the needs of people at one time,
-                                but because our software is available for all to improve, we can tackle changes as they come.
-                            </p>
-                        </div>
-                        <div class='card card secondary-color drop-shadow'>
-                            <h3 id='belief-open-source'>High Quality</h3>
-                            <p>
-                                High quality software is designed for interoperability and built robustly.
-                                On the user side quality software should accomplish its task without frustrating the user and allow the user to work across multiple platforms.
-                                On the development side quality software should be maintainable.
-                                We take great care to always follow strong software engineering practices,
-                                the <a href='https://www.acm.org/code-of-ethics'>ACM Code of Ethics</a>,
-                                and our own moral compass.
-                                We strive build software that is secure, interoperable, maintainable, and robust.
-                            </p>
+
+                        <div class='card-area card-area-beliefs'>
+                            <div class='card secondary-color drop-shadow' data-type='large' data-name='large'>
+                                <h3 id='belief-free'>Free</h3>
+                                <p>
+                                    Free software is available without charge to anyone that can download it.
+                                    There should be no barriers on education, and wealth is perhaps the greatest barrier there is.
+                                    Whether that barrier comes in the form of money, time, or privilege.
+                                    As a software developer,
+                                    we don't have the power to address all the issues that come with wealth inequality,
+                                    but at least we can make our software free.
+                                </p>
+                            </div>
+                            <div class='card secondary-color drop-shadow' data-type='large' data-name='large'>
+                                <h3 id='belief-open-source'>Open Source</h3>
+                                <p>
+                                    Open source software has code that is always available to view and modify,
+                                    anyone can see how the software works and improve upon it.
+                                    Our dedication to open source software is that same as
+                                    our dedication to transparency and always improving.
+                                    It's impossible to foresee all the needs of people at one time,
+                                    but because our software is available for all to improve, we can tackle changes as they come.
+                                </p>
+                            </div>
+                            <div class='card secondary-color drop-shadow' data-type='large' data-name='large'>
+                                <h3 id='belief-open-source'>High Quality</h3>
+                                <p>
+                                    High quality software is designed for interoperability and built robustly.
+                                    On the user side quality software should accomplish its task without frustrating the user and allow the user to work across multiple platforms.
+                                    On the development side quality software should be maintainable.
+                                    We take great care to always follow strong software engineering practices,
+                                    the <a href='https://www.acm.org/code-of-ethics'>ACM Code of Ethics</a>,
+                                    and our own moral compass.
+                                    We strive build software that is secure, interoperable, maintainable, and robust.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
+                    <div class='section projects'>
+                        <h2 class='bar primary-accent-color' id='projects'>Our Projects</h2>
 
+                        <div class='section-brief'>
+                            <p class='no-bottom'>
+                                We have many projects, all focused on making education more accessible, efficient, and engaging.
+                                Below are a few of our projects
+                                (see <a href='https://github.com/edulinq' aria-label='See our work on GitHub'>our GitHub page</a> for all of them).
+                            </p>
+                        </div>
+
+                        <div class='card-area card-area-projects'>
+                            <div class='card secondary-color drop-shadow' data-type='large' data-name='large'>
+                                <h3 id='projetcs-autograder'>Lynx Autograder</h3>
+                                <p>
+                                    The <a href='https://github.com/edulinq/autograder-server'>Lynx Autograder</a> allows instructors
+                                    to create new or integrate existing grading infrastructure into a secure system that:
+                                </p>
+                                <ol>
+                                    <li>accepts and tracks student submissions;</li>
+                                    <li>runs students' code in a secure, isolated, and customizable environment;</li>
+                                    <li>provides students feedback on their submissions;</li>
+                                    <li>saves and backs up submission history;</li>
+                                    <li>and uploads grades to a course management platform such as Canvas.</li>
+                                </ol>
+
+                                <div class='logos-area'>
+                                    <a class='logo' href='https://github.com/edulinq' aria-label='See our work on GitHub'>
+                                        <div>
+                                            <svg class='lightmode-only icon' aria-hidden='true' focusable='false'>
+                                                <use href="vendor/edq/images/icons.svg#icon-github-light"></use>
+                                            </svg>
+                                            <svg class='darkmode-only icon' aria-hidden='true' focusable='false'>
+                                                <use href="vendor/edq/images/icons.svg#icon-github-dark"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class='card secondary-color drop-shadow' data-type='large' data-name='large'>
+                                <h3 id='projects-quiz-composer'>Quiz Composer</h3>
+                                <p>
+                                    The <a href='https://github.com/edulinq/quiz-composer'>Quiz Composer</a>
+                                    allows instructors to create platform-agnostic quizzes (including exams and worksheets) in a
+                                    unified readable common layout and then quizzes can be instantiated in any number of
+                                    formats automatically — quizzes can be generated in Canvas, HTML forms, LaTeX, PDFs, or GradeScope.
+                                    The common format and tooling allows for frictionless collaboration when developing quizzes,
+                                    simple deployment for both online and paper quizzes,
+                                    and seamless handoffs between terms.
+                                </p>
+
+                                <div class='logos-area'>
+                                    <a class='logo' href='https://github.com/edulinq' aria-label='See our work on GitHub'>
+                                        <div>
+                                            <svg class='lightmode-only icon' aria-hidden='true' focusable='false'>
+                                                <use href="vendor/edq/images/icons.svg#icon-github-light"></use>
+                                            </svg>
+                                            <svg class='darkmode-only icon' aria-hidden='true' focusable='false'>
+                                                <use href="vendor/edq/images/icons.svg#icon-github-dark"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class='card secondary-color drop-shadow' data-type='large' data-name='large'>
+                                <h3 id='projetcs-lms'>LMS Toolkit</h3>
+                                <p>
+                                    The <a href='https://github.com/edulinq/lms-toolkit'>LMS Toolkit</a>
+                                    is a Python interface and site of CLI tools to interact with different
+                                    <a href='https://en.wikipedia.org/wiki/Learning_management_system'>Learning Management Systems</a> (LMSs).
+                                    LMSs are pivotal for running large courses,
+                                    but have inconsistent graphical interfaces and typically are not designed for programmatic access.
+                                    Once you learn one, moving between LMSs can be quite difficult.
+                                    The LMS Toolkit provides users a unified, programmable interface to multiple LMSs.
+                                    This allows instructors to easily move between LMSs,
+                                    and support features that may not explicitly encoded into a specific LMS's GUI.
+                                </p>
+
+                                <div class='logos-area'>
+                                    <a class='logo' href='https://github.com/edulinq' aria-label='See our work on GitHub'>
+                                        <div>
+                                            <svg class='lightmode-only icon' aria-hidden='true' focusable='false'>
+                                                <use href="vendor/edq/images/icons.svg#icon-github-light"></use>
+                                            </svg>
+                                            <svg class='darkmode-only icon' aria-hidden='true' focusable='false'>
+                                                <use href="vendor/edq/images/icons.svg#icon-github-dark"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class='card secondary-color drop-shadow' data-type='large' data-name='large'>
+                                <h3 id='projects-pacai'>Pacai</h3>
+                                <p>
+                                    <a href='https://github.com/edulinq/pacai'>Pacai</a> is an educational tool for AI
+                                    in the guise of the Pac-Man game.
+                                    Originally developed for
+                                    <a href='https://www-inst.eecs.berkeley.edu/project_overview.html'>UC Berkeley AI courses</a>,
+                                    we have rebuilt this project with from the ground up to improve performance, support, and accessibility.
+                                    Notable improvements include:
+                                </p>
+                                <ul>
+                                    <li>Upgraded to Python 3.10.</li>
+                                    <li>Added Python type hints.</li>
+                                    <li>Created a new web-based UI.</li>
+                                    <li>Added isolation between agents and the core game engine to prevent cheating.</li>
+                                    <li>Added the ability to save games as animated gifs.</li>
+                                </ul>
+
+                                <div class='logos-area'>
+                                    <a class='logo' href='https://github.com/edulinq' aria-label='See our work on GitHub'>
+                                        <div>
+                                            <svg class='lightmode-only icon' aria-hidden='true' focusable='false'>
+                                                <use href="vendor/edq/images/icons.svg#icon-github-light"></use>
+                                            </svg>
+                                            <svg class='darkmode-only icon' aria-hidden='true' focusable='false'>
+                                                <use href="vendor/edq/images/icons.svg#icon-github-dark"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='section about-us'>
+                        <h2 class='bar primary-accent-color' id='about-us'>Our Team</h2>
+
+                        <div class='section-brief'>
+                            <p class='no-bottom'>
+                                Our team has long been involved in education and software development.
+                                It is no wonder that we make educational tools.
+                            </p>
+                        </div>
+
+                        <div class='card-area card-area-officers'>
+                            <div class='card card-bio secondary-color drop-shadow' data-type='large' data-name='bio'>
+                                <h3 id='eriq'>Eriq Augustine</h3>
+                                <h4 class='position'>Co-Founder</h4>
+                                <a href='https://eriqaugustine.com'>
+                                    <img src='images/augustine.png' />
+                                </a>
+                                <p>
+                                    Eriq Augustine received his PhD in Computer Science in 2023, researching the scalability, expressively, and usability of relational machine learning models.
+                                    He started his academic career at Cal Poly San, Luis Obispo where he got his BS and MS in Computer Science.
+                                    He then spent several years in industry, working
+                                    at Netflix on the Cloud Reliability team,
+                                    at Google on Chrome's Extension Engine team,
+                                    and as a Senior Software Developer at Gaine Solutions (a master data management / database startup).
+                                    He finally decided to return to academia to get his PhD in CS/ML at UC Santa Cruz under Dr. Lise Getoor.
+                                    However no matter where he was (academia or industry), one thing that always followed me was his love for teaching.
+                                    He started tutoring off-and-on in middle school,
+                                    turned it into a job in high school,
+                                    became head tutor and ran his department's tutoring center at Cal Poly,
+                                    became a lecturer for Cal Poly while working at Gaine Solutions,
+                                    and am constantly involved in teaching, tutoring, mentoring, and creating curriculum at UCSC.
+                                    Most of his life he has been involved with teaching.
+                                    Now, he wants to combine his experience with teaching, academia, and industry to create software to help people teach.
+                                </p>
+                            </div>
+                            <div class='card card-bio secondary-color drop-shadow' data-type='large' data-name='bio'>
+                                <h3 id='lise'>Lise Getoor</h3>
+                                <h4 class='position'>Co-Founder</h4>
+                                <a href='https://getoor.linqs.org'>
+                                    <img src='images/getoor.jpg' />
+                                </a>
+                                <p>
+                                    Lise Getoor is a distinguished professor in the Computer Science Department at UC Santa Cruz and holds a Baskin Endowed Chair.
+                                    She has over 250 publications and extensive experience with machine learning and probabilistic modeling methods for graph and network data.
+                                    She is a Fellow of the American Academy of Arts and Sciences, the American Association for Advancement of Science, Association for Advancement of Artificial Intelligence (AAAI), the Association for Computing Machinery (ACM) and the Institute of Electrical and Electronics Engineers (IEEE).
+                                    She has been an elected board member of the International Machine Learning Society, served on the board of the Computing Research Association (CRA), has served as Machine Learning Journal Action Editor, Associate Editor for the ACM Transactions of Knowledge Discovery from Data, JAIR Associate Editor, and on the AAAI Council.
+                                    She is a recipient of an NSF Career Award and thirteen best paper and best student paper awards.
+                                    In 2014, she was recognized as one of the top ten emerging researchers leaders in data mining and data science based on citation and impact according to KDD Nuggets.
+                                    She has served on the external advisory board the San Diego Super Computer Center, and the scientific advisory board for the Max Planck Institute for Software Systems, and has served on the advisory board for companies including Sentient Technologies.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class='card-area card-area-board'>
+                            <div class='card card-bio secondary-color drop-shadow' data-type='large' data-name='bio'>
+                                <h3 id='peter'>Peter Alvaro</h3>
+                                <h4 class='position'>Board Member</h4>
+                                <a href='https://people.ucsc.edu/~palvaro'>
+                                    <img src='images/alvaro.jpg' />
+                                </a>
+                                <p>
+                                    Peter Alvaro is an Associate Professor of Computer Science at the University of California Santa Cruz,
+                                    where he lead the <a href='disorderlylabs.github.io'>Disorderly Labs research group</a>.
+                                    His research focuses on using data-centric languages and analysis techniques to build and reason about data-intensive distributed systems,
+                                    in order to make them scalable, predictable and robust to the failures and nondeterminism endemic to large-scale distribution.
+                                    He earned his PhD at UC Berkeley, where he studied with Joseph M. Hellerstein.
+                                    He is a recipient of the NSF CAREER Award, the Facebook Research Award, the USENIX ATC 2020 Best Presentation Award, the SIGMOD 2021 Distinguished PC Award, and the UCSC Excellence in Teaching Award.
+                                </p>
+                            </div>
+                            <div class='card card-bio secondary-color drop-shadow' data-type='large' data-name='bio'>
+                                <h3 id='alex'>Alexander Dekhtyar</h3>
+                                <h4 class='position'>Board Member</h4>
+                                <a href='https://users.csc.calpoly.edu/~dekhtyar'>
+                                    <img src='images/dekhtyar.jpg' />
+                                </a>
+                                <p>
+                                    Alex Dekhtyar is a Professor of Computer Science at Cal Poly, San Luis Obispo.
+                                    He has a PhD in Computer Science from the University of Maryland.
+                                    His research interests include machine learning, data science, database systems, requirements engineering,
+                                    and cross-disciplinary research that requires applied machine learning, data science, or database technologies, as well as Computer Science and Data Science education.
+                                    He is a co-founder of Cal Poly's Cross-Disciplinary Studies Minor in Data Science, and is one of the principal faculty members working on the BS in Data Science.
+                                    He is also one of the co-founders or RE Cares - a Software Engineering + Social Good event co-located with the International Conference on Requirements Engineering.
+                                    He is one of the faculty collaborator's on the <a href='https://digitaldemocracy.calmatters.org/'>Digital Democracy project</a>.
+                                </p>
+                            </div>
+                            <div class='card card-bio secondary-color drop-shadow' data-type='large' data-name='bio'>
+                                <h3 id='leilani'>Leilani Gilpin</h3>
+                                <h4 class='position'>Board Member</h4>
+                                <a href='https://people.ucsc.edu/~lgilpin/'>
+                                    <img src='images/gilpin.jpg' />
+                                </a>
+                                <p>
+                                    Leilani Gilpin is an Assistant Professor in the Department of Computer Science and Engineering at UC Santa Cruz.
+                                    Her research focuses on the design and analysis of methods for autonomous systems to explain themselves.
+                                    Her work has applications to robust decision-making, system debugging, and accountability.
+                                    She holds a PhD in Computer Science from MIT, an M.S. in Computational and Mathematical Engineering from Stanford University,
+                                    and a B.S. in Mathematics (with honors), B.S. in Computer Science (with highest honors), and a music minor from UC San Diego.
+                                    Outside of research, she enjoys swimming, cooking, hiking, and org-mode.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='section get-involved'>
+                        <h2 class='bar primary-accent-color' id='get-involved'>Get Involved</h2>
+
+                        <div class='section-brief'>
+                            <p class='no-bottom'>
+                                We welcome help from anyone.
+                                No matter your experience or skill set, there is always room for more help.
+                            </p>
+                        </div>
+
+                        <div class='card-area card-area-get-involved'>
+                            <div class='card secondary-color drop-shadow' data-type='large' data-name='large'>
+                                <h3 id='get-involved-coders'>Coders</h3>
+                                <p>
+                                    Our software is open source,
+                                    so there is always room for more developers.
+                                    We have a wide range of software (frontend, backend, CLI, AI, etc.),
+                                    so take your pick!
+                                </p>
+                            </div>
+                            <div class='card secondary-color drop-shadow' data-type='large' data-name='large'>
+                                <h3 id='get-involved-designers'>Designers</h3>
+                                <p>
+                                    We have several products with web-based GUIs,
+                                    and can always use more design advice.
+                                    Whether it is logos, layouts, colors, or something else;
+                                    a designer's touch is always welcome.
+                                </p>
+                            </div>
+                            <div class='card secondary-color drop-shadow' data-type='large' data-name='large'>
+                                <h3 id='get-involved-tech-writers'>Technical Writers</h3>
+                                <p>
+                                    Any great product is only as good as its documentation.
+                                    Ranging over comments, READMEs, tutorials, and websites,
+                                    there are plenty of places where a good writer can help out our users.
+                                </p>
+                            </div>
+                            <div class='card secondary-color drop-shadow' data-type='large' data-name='large'>
+                                <h3 id='get-involved-instructors'>Instructors and TAs</h3>
+                                <p>
+                                    If you have used our products in your own class or want to,
+                                    then we would love to hear about it and answer your questions!
+                                    Either way, come over to our Discord server to chat.
+                                </p>
+                            </div>
+                            <div class='card secondary-color drop-shadow' data-type='large' data-name='large'>
+                                <h3 id='get-involved-donate'>Anyone Who Believes</h3>
+                                <p>
+                                    If you believe in our mission, thank you!
+                                    If you have the means,
+                                    we would very much appreciate any donation you can manage.
+
+                                    We accept donations through
+                                    <a href='https://github.com/sponsors/edulinq'>GitHub Sponsorships</a>
+                                    or <a href='https://www.paypal.com/donate?hosted_button_id=4D5VY26TH4YJE'>PayPal</a>.
+                                </p>
+
+                                <div class='logos-area'>
+                                    <a class='logo' href='https://github.com/edulinq' aria-label='See our work on GitHub'>
+                                        <div>
+                                            <svg class='lightmode-only icon' aria-hidden='true' focusable='false'>
+                                                <use href="vendor/edq/images/icons.svg#icon-github-light"></use>
+                                            </svg>
+                                            <svg class='darkmode-only icon' aria-hidden='true' focusable='false'>
+                                                <use href="vendor/edq/images/icons.svg#icon-github-dark"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <a class='logo' href='https://www.paypal.com/donate?hosted_button_id=4D5VY26TH4YJE'>
+                                        <img class='lightmode-only' src='images/vendor/paypal-symbol-black.png' />
+                                        <img class='darkmode-only' src='images/vendor/paypal-symbol-white.png' />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='section contact-us'>
+                        <h2 class='bar primary-accent-color' id='contact-us'>Where to Find Us</h2>
+
+                        <div class='section-brief'>
+                            <p class='no-bottom'>
+                                Feel free to reach out to us wherever we are.
+                            </p>
+                        </div>
+
+                        <div class='card-area card-area-contact'>
+                            <div class='card secondary-color drop-shadow' data-type='large' data-name='large'>
+                                <h3 id='contact-github'>Github</h3>
+                                <p>
+                                    Most of our software is available on GitHub,
+                                    free and open source, of course.
+                                </p>
+
+                                <div class='logos-area'>
+                                    <a class='logo' href='https://github.com/edulinq' aria-label='See our work on GitHub'>
+                                        <div>
+                                            <svg class='lightmode-only icon' aria-hidden='true' focusable='false'>
+                                                <use href="vendor/edq/images/icons.svg#icon-github-light"></use>
+                                            </svg>
+                                            <svg class='darkmode-only icon' aria-hidden='true' focusable='false'>
+                                                <use href="vendor/edq/images/icons.svg#icon-github-dark"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class='card secondary-color drop-shadow' data-type='large' data-name='large'>
+                                <h3 id='contact-discord'>Discord</h3>
+                                <p>
+                                    We have a Discord server!
+                                    Drop in if you need help,
+                                    want to contribute,
+                                    or just want to talk about educational software.
+                                </p>
+
+                                <div class='logos-area'>
+                                    <a class='logo' href='https://discord.gg/xRxdbWqtWS' aria-label='Join us on Discord'>
+                                        <div>
+                                            <svg class='lightmode-only icon' aria-hidden='true' focusable='false'>
+                                                <use href="vendor/edq/images/icons.svg#icon-discord-light"></use>
+                                            </svg>
+                                            <svg class='darkmode-only icon' aria-hidden='true' focusable='false'>
+                                                <use href="vendor/edq/images/icons.svg#icon-discord-dark"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class='section projects'>
-                    <div class='section-header'>
-                        <h2 id='projects'>Our Projects</h2>
-                    </div>
-
-                    <div class='section-brief'>
-                        <p class='no-bottom'>
-                            We have many projects, all focused on making education more accessible, efficient, and engaging.
-                            Below are a few of our projects
-                            (see <a href='https://github.com/edulinq' aria-label='See our work on GitHub'>our GitHub page</a> for all of them).
-                        </p>
-                    </div>
-
-                    <div class='cards-area cards-area-projects'>
-                        <div class='card secondary-color drop-shadow'>
-                            <h3 id='projetcs-autograder'>Lynx Autograder</h3>
-                            <p>
-                                The <a href='https://github.com/edulinq/autograder-server'>Lynx Autograder</a> allows instructors
-                                to create new or integrate existing grading infrastructure into a secure system that:
-                            </p>
-                            <ol>
-                                <li>accepts and tracks student submissions;</li>
-                                <li>runs students' code in a secure, isolated, and customizable environment;</li>
-                                <li>provides students feedback on their submissions;</li>
-                                <li>saves and backs up submission history;</li>
-                                <li>and uploads grades to a course management platform such as Canvas.</li>
-                            </ol>
-
-                            <div class='logos-area'>
-                                <a class='logo' href='https://github.com/edulinq' aria-label='See our work on GitHub'>
-                                    <div>
-                                        <svg class='light-only icon' aria-hidden='true' focusable='false'>
-                                            <use href="images/edulinq-icon-sheet.svg#icon-github-light"></use>
-                                        </svg>
-                                        <svg class='dark-only icon' aria-hidden='true' focusable='false'>
-                                            <use href="images/edulinq-icon-sheet.svg#icon-github-dark"></use>
-                                        </svg>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class='card secondary-color drop-shadow'>
-                            <h3 id='projects-quiz-composer'>Quiz Composer</h3>
-                            <p>
-                                The <a href='https://github.com/edulinq/quiz-composer'>Quiz Composer</a>
-                                allows instructors to create platform-agnostic quizzes (including exams and worksheets) in a
-                                unified readable common layout and then quizzes can be instantiated in any number of
-                                formats automatically — quizzes can be generated in Canvas, HTML forms, LaTeX, PDFs, or GradeScope.
-                                The common format and tooling allows for frictionless collaboration when developing quizzes,
-                                simple deployment for both online and paper quizzes,
-                                and seamless handoffs between terms.
-                            </p>
-
-                            <div class='logos-area'>
-                                <a class='logo' href='https://github.com/edulinq' aria-label='See our work on GitHub'>
-                                    <div>
-                                        <svg class='light-only icon' aria-hidden='true' focusable='false'>
-                                            <use href="images/edulinq-icon-sheet.svg#icon-github-light"></use>
-                                        </svg>
-                                        <svg class='dark-only icon' aria-hidden='true' focusable='false'>
-                                            <use href="images/edulinq-icon-sheet.svg#icon-github-dark"></use>
-                                        </svg>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class='card secondary-color drop-shadow'>
-                            <h3 id='projetcs-lms'>LMS Toolkit</h3>
-                            <p>
-                                The <a href='https://github.com/edulinq/lms-toolkit'>LMS Toolkit</a>
-                                is a Python interface and site of CLI tools to interact with different
-                                <a href='https://en.wikipedia.org/wiki/Learning_management_system'>Learning Management Systems</a> (LMSs).
-                                LMSs are pivotal for running large courses,
-                                but have inconsistent graphical interfaces and typically are not designed for programmatic access.
-                                Once you learn one, moving between LMSs can be quite difficult.
-                                The LMS Toolkit provides users a unified, programmable interface to multiple LMSs.
-                                This allows instructors to easily move between LMSs,
-                                and support features that may not explicitly encoded into a specific LMS's GUI.
-                            </p>
-
-                            <div class='logos-area'>
-                                <a class='logo' href='https://github.com/edulinq' aria-label='See our work on GitHub'>
-                                    <div>
-                                        <svg class='light-only icon' aria-hidden='true' focusable='false'>
-                                            <use href="images/edulinq-icon-sheet.svg#icon-github-light"></use>
-                                        </svg>
-                                        <svg class='dark-only icon' aria-hidden='true' focusable='false'>
-                                            <use href="images/edulinq-icon-sheet.svg#icon-github-dark"></use>
-                                        </svg>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class='card secondary-color drop-shadow'>
-                            <h3 id='projects-pacai'>Pacai</h3>
-                            <p>
-                                <a href='https://github.com/edulinq/pacai'>Pacai</a> is an educational tool for AI
-                                in the guise of the Pac-Man game.
-                                Originally developed for
-                                <a href='https://www-inst.eecs.berkeley.edu/project_overview.html'>UC Berkeley AI courses</a>,
-                                we have rebuilt this project with from the ground up to improve performance, support, and accessibility.
-                                Notable improvements include:
-                            </p>
-                            <ul>
-                                <li>Upgraded to Python 3.10.</li>
-                                <li>Added Python type hints.</li>
-                                <li>Created a new web-based UI.</li>
-                                <li>Added isolation between agents and the core game engine to prevent cheating.</li>
-                                <li>Added the ability to save games as animated gifs.</li>
-                            </ul>
-
-                            <div class='logos-area'>
-                                <a class='logo' href='https://github.com/edulinq' aria-label='See our work on GitHub'>
-                                    <div>
-                                        <svg class='light-only icon' aria-hidden='true' focusable='false'>
-                                            <use href="images/edulinq-icon-sheet.svg#icon-github-light"></use>
-                                        </svg>
-                                        <svg class='dark-only icon' aria-hidden='true' focusable='false'>
-                                            <use href="images/edulinq-icon-sheet.svg#icon-github-dark"></use>
-                                        </svg>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class='section about-us'>
-                    <div class='section-header'>
-                        <h2 id='about-us'>Our Team</h2>
-                    </div>
-
-                    <div class='section-brief'>
-                        <p class='no-bottom'>
-                            Our team has long been involved in education and software development.
-                            It is no wonder that we make educational tools.
-                        </p>
-                    </div>
-
-                    <div class='cards-area card-area-officers'>
-                        <div class='card card-bio secondary-color drop-shadow'>
-                            <h3 id='eriq'>Eriq Augustine</h3>
-                            <h4 class='position'>Co-Founder</h4>
-                            <img src='images/augustine.png' />
-                            <p>
-                                Eriq Augustine received his PhD in Computer Science in 2023, researching the scalability, expressively, and usability of relational machine learning models.
-                                He started his academic career at Cal Poly San, Luis Obispo where he got his BS and MS in Computer Science.
-                                He then spent several years in industry, working
-                                at Netflix on the Cloud Reliability team,
-                                at Google on Chrome's Extension Engine team,
-                                and as a Senior Software Developer at Gaine Solutions (a master data management / database startup).
-                                He finally decided to return to academia to get his PhD in CS/ML at UC Santa Cruz under Dr. Lise Getoor.
-                                However no matter where he was (academia or industry), one thing that always followed me was his love for teaching.
-                                He started tutoring off-and-on in middle school,
-                                turned it into a job in high school,
-                                became head tutor and ran his department's tutoring center at Cal Poly,
-                                became a lecturer for Cal Poly while working at Gaine Solutions,
-                                and am constantly involved in teaching, tutoring, mentoring, and creating curriculum at UCSC.
-                                Most of his life he has been involved with teaching.
-                                Now, he wants to combine his experience with teaching, academia, and industry to create software to help people teach.
-                            </p>
-                        </div>
-                        <div class='card card-bio secondary-color drop-shadow'>
-                            <h3 id='lise'>Lise Getoor</h3>
-                            <h4 class='position'>Co-Founder</h4>
-                            <img src='images/getoor.jpg' />
-                            <p>
-                                Lise Getoor is a distinguished professor in the Computer Science Department at UC Santa Cruz and holds a Baskin Endowed Chair.
-                                She has over 250 publications and extensive experience with machine learning and probabilistic modeling methods for graph and network data.
-                                She is a Fellow of the American Academy of Arts and Sciences, the American Association for Advancement of Science, Association for Advancement of Artificial Intelligence (AAAI), the Association for Computing Machinery (ACM) and the Institute of Electrical and Electronics Engineers (IEEE).
-                                She has been an elected board member of the International Machine Learning Society, served on the board of the Computing Research Association (CRA), has served as Machine Learning Journal Action Editor, Associate Editor for the ACM Transactions of Knowledge Discovery from Data, JAIR Associate Editor, and on the AAAI Council.
-                                She is a recipient of an NSF Career Award and thirteen best paper and best student paper awards.
-                                In 2014, she was recognized as one of the top ten emerging researchers leaders in data mining and data science based on citation and impact according to KDD Nuggets.
-                                She has served on the external advisory board the San Diego Super Computer Center, and the scientific advisory board for the Max Planck Institute for Software Systems, and has served on the advisory board for companies including Sentient Technologies.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class='cards-area card-area-board'>
-                        <div class='card card-bio secondary-color drop-shadow'>
-                            <h3 id='peter'>Peter Alvaro</h3>
-                            <h4 class='position'>Board Member</h4>
-                            <img src='images/alvaro.jpg' />
-                            <p>
-                                Peter Alvaro is an Associate Professor of Computer Science at the University of California Santa Cruz,
-                                where he lead the <a href='disorderlylabs.github.io'>Disorderly Labs research group</a>.
-                                His research focuses on using data-centric languages and analysis techniques to build and reason about data-intensive distributed systems,
-                                in order to make them scalable, predictable and robust to the failures and nondeterminism endemic to large-scale distribution.
-                                He earned his PhD at UC Berkeley, where he studied with Joseph M. Hellerstein.
-                                He is a recipient of the NSF CAREER Award, the Facebook Research Award, the USENIX ATC 2020 Best Presentation Award, the SIGMOD 2021 Distinguished PC Award, and the UCSC Excellence in Teaching Award.
-                            </p>
-                        </div>
-                        <div class='card card-bio secondary-color drop-shadow'>
-                            <h3 id='alex'>Alexander Dekhtyar</h3>
-                            <h4 class='position'>Board Member</h4>
-                            <img src='images/dekhtyar.jpg' />
-                            <p>
-                                Alex Dekhtyar is a Professor of Computer Science at Cal Poly, San Luis Obispo.
-                                He has a PhD in Computer Science from the University of Maryland.
-                                His research interests include machine learning, data science, database systems, requirements engineering,
-                                and cross-disciplinary research that requires applied machine learning, data science, or database technologies, as well as Computer Science and Data Science education.
-                                He is a co-founder of Cal Poly's Cross-Disciplinary Studies Minor in Data Science, and is one of the principal faculty members working on the BS in Data Science.
-                                He is also one of the co-founders or RE Cares - a Software Engineering + Social Good event co-located with the International Conference on Requirements Engineering.
-                                He is one of the faculty collaborator's on the <a href='https://digitaldemocracy.calmatters.org/'>Digital Democracy project</a>.
-                            </p>
-                        </div>
-                        <div class='card card-bio secondary-color drop-shadow'>
-                            <h3 id='leilani'>Leilani Gilpin</h3>
-                            <h4 class='position'>Board Member</h4>
-                            <a href='https://people.ucsc.edu/~lgilpin/'>
-                                <img src='images/gilpin.jpg' />
-                            </a>
-                            <p>
-                                Leilani Gilpin is an Assistant Professor in the Department of Computer Science and Engineering at UC Santa Cruz.
-                                Her research focuses on the design and analysis of methods for autonomous systems to explain themselves.
-                                Her work has applications to robust decision-making, system debugging, and accountability.
-                                She holds a PhD in Computer Science from MIT, an M.S. in Computational and Mathematical Engineering from Stanford University,
-                                and a B.S. in Mathematics (with honors), B.S. in Computer Science (with highest honors), and a music minor from UC San Diego.
-                                Outside of research, she enjoys swimming, cooking, hiking, and org-mode.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class='section get-involved'>
-                    <div class='section-header'>
-                        <h2 id='get-involved'>Get Involved</h2>
-                    </div>
-
-                    <div class='section-brief'>
-                        <p class='no-bottom'>
-                            We welcome help from anyone.
-                            No matter your experience or skill set, there is always room for more help.
-                        </p>
-                    </div>
-
-                    <div class='cards-area cards-area-get-involved'>
-                        <div class='card secondary-color drop-shadow'>
-                            <h3 id='get-involved-coders'>Coders</h3>
-                            <p>
-                                Our software is open source,
-                                so there is always room for more developers.
-                                We have a wide range of software (frontend, backend, CLI, AI, etc.),
-                                so take your pick!
-                            </p>
-                        </div>
-                        <div class='card secondary-color drop-shadow'>
-                            <h3 id='get-involved-designers'>Designers</h3>
-                            <p>
-                                We have several products with web-based GUIs,
-                                and can always use more design advice.
-                                Whether it is logos, layouts, colors, or something else;
-                                a designer's touch is always welcome.
-                            </p>
-                        </div>
-                        <div class='card secondary-color drop-shadow'>
-                            <h3 id='get-involved-tech-writers'>Technical Writers</h3>
-                            <p>
-                                Any great product is only as good as its documentation.
-                                Ranging over comments, READMEs, tutorials, and websites,
-                                there are plenty of places where a good writer can help out our users.
-                            </p>
-                        </div>
-                        <div class='card secondary-color drop-shadow'>
-                            <h3 id='get-involved-instructors'>Instructors and TAs</h3>
-                            <p>
-                                If you have used our products in your own class or want to,
-                                then we would love to hear about it and answer your questions!
-                                Either way, come over to our Discord server to chat.
-                            </p>
-                        </div>
-                        <div class='card secondary-color drop-shadow'>
-                            <h3 id='get-involved-donate'>Anyone Who Believes</h3>
-                            <p>
-                                If you believe in our mission, thank you!
-                                If you have the means,
-                                we would very much appreciate any donation you can manage.
-
-                                We accept donations through
-                                <a href='https://github.com/sponsors/edulinq'>GitHub Sponsorships</a>
-                                or <a href='https://www.paypal.com/donate?hosted_button_id=4D5VY26TH4YJE'>PayPal</a>.
-                            </p>
-
-                            <div class='logos-area'>
-                                <a class='logo' href='https://github.com/edulinq' aria-label='See our work on GitHub'>
-                                    <div>
-                                        <svg class='light-only icon' aria-hidden='true' focusable='false'>
-                                            <use href="images/edulinq-icon-sheet.svg#icon-github-light"></use>
-                                        </svg>
-                                        <svg class='dark-only icon' aria-hidden='true' focusable='false'>
-                                            <use href="images/edulinq-icon-sheet.svg#icon-github-dark"></use>
-                                        </svg>
-                                    </div>
-                                </a>
-                                <a class='logo' href='https://www.paypal.com/donate?hosted_button_id=4D5VY26TH4YJE'>
-                                    <img class='light-only' src='images/vendor/paypal-symbol-black.png' />
-                                    <img class='dark-only' src='images/vendor/paypal-symbol-white.png' />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class='section contact-us'>
-                    <div class='section-header'>
-                        <h2 id='contact-us'>Where to Find Us</h2>
-                    </div>
-
-                    <div class='section-brief'>
-                        <p class='no-bottom'>
-                            Feel free to reach out to us wherever we are.
-                        </p>
-                    </div>
-
-                    <div class='cards-area cards-area-contact'>
-                        <div class='card secondary-color drop-shadow'>
-                            <h3 id='contact-github'>Github</h3>
-                            <p>
-                                Most of our software is available on GitHub,
-                                free and open source, of course.
-                            </p>
-
-                            <div class='logos-area'>
-                                <a class='logo' href='https://github.com/edulinq' aria-label='See our work on GitHub'>
-                                    <div>
-                                        <svg class='light-only icon' aria-hidden='true' focusable='false'>
-                                            <use href="images/edulinq-icon-sheet.svg#icon-github-light"></use>
-                                        </svg>
-                                        <svg class='dark-only icon' aria-hidden='true' focusable='false'>
-                                            <use href="images/edulinq-icon-sheet.svg#icon-github-dark"></use>
-                                        </svg>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class='card secondary-color drop-shadow'>
-                            <h3 id='contact-discord'>Discord</h3>
-                            <p>
-                                We have a Discord server!
-                                Drop in if you need help,
-                                want to contribute,
-                                or just want to talk about educational software.
-                            </p>
-
-                            <div class='logos-area'>
-                                <a class='logo' href='https://discord.gg/xRxdbWqtWS' aria-label='Join us on Discord'>
-                                    <div>
-                                        <svg class='light-only icon' aria-hidden='true' focusable='false'>
-                                            <use href="images/edulinq-icon-sheet.svg#icon-discord-light"></use>
-                                        </svg>
-                                        <svg class='dark-only icon' aria-hidden='true' focusable='false'>
-                                            <use href="images/edulinq-icon-sheet.svg#icon-discord-dark"></use>
-                                        </svg>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             </div>
 
             <div class='footer secondary-color'>
@@ -500,21 +506,21 @@
                 <div class='right'>
                     <a href='https://discord.gg/xRxdbWqtWS' aria-label='Join us on Discord'>
                         <div>
-                            <svg class='light-only icon' aria-hidden='true' focusable='false'>
-                                <use href="images/edulinq-icon-sheet.svg#icon-discord-light"></use>
+                            <svg class='lightmode-only icon' aria-hidden='true' focusable='false'>
+                                <use href="vendor/edq/images/icons.svg#icon-discord-light"></use>
                             </svg>
-                            <svg class='dark-only icon' aria-hidden='true' focusable='false'>
-                                <use href="images/edulinq-icon-sheet.svg#icon-discord-dark"></use>
+                            <svg class='darkmode-only icon' aria-hidden='true' focusable='false'>
+                                <use href="vendor/edq/images/icons.svg#icon-discord-dark"></use>
                             </svg>
                         </div>
                     </a>
                     <a href='https://github.com/edulinq' aria-label='See our work on GitHub'>
                         <div>
-                            <svg class='light-only icon' aria-hidden='true' focusable='false'>
-                                <use href="images/edulinq-icon-sheet.svg#icon-github-light"></use>
+                            <svg class='lightmode-only icon' aria-hidden='true' focusable='false'>
+                                <use href="vendor/edq/images/icons.svg#icon-github-light"></use>
                             </svg>
-                            <svg class='dark-only icon' aria-hidden='true' focusable='false'>
-                                <use href="images/edulinq-icon-sheet.svg#icon-github-dark"></use>
+                            <svg class='darkmode-only icon' aria-hidden='true' focusable='false'>
+                                <use href="vendor/edq/images/icons.svg#icon-github-dark"></use>
                             </svg>
                         </div>
                     </a>
